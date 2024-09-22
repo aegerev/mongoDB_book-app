@@ -47,13 +47,21 @@ router.post("/:id/reviews", async (req, res) => {
   } else {
     // TODO: Update the specified book with the new review
     // Hint: Use the $push operator to add the review to the reviews array
+
     // const updateResult = await collection.updateOne(...);
 
     // TODO: Check if the book was found and updated, respond accordingly
     // if (updateResult.matchedCount === 0) { ... } else { ... }
+    let updateResult = await collection.updateOne(
+      {_id: new ObjectId(req.params.id) },
+      {$push: {reviews: review}}
+    );
 
-    // Placeholder for the response to keep the endpoint functional
-    res.status(501).send("Endpoint functionality not implemented yet");
+    if(updateResult.matchedCount === 0) {
+      res.status(404).send({message: "Book not found"});
+    } else {
+      res.status(201).send({message: "Review Added"});
+    }
   }
   client.close();
 });
