@@ -29,18 +29,15 @@ function BookDetails({ book }) {
 		}
 
 		try {
-			// TODO: Post the review to the backend using axios
-			// await axios.post(...);
-
-			// TODO: Update the details state to include the new review
-			// setDetails(prevDetails => ...);
-
-			// TODO: Clear the review input and set a success message
-			// setReview('');
-			// setSubmitStatus('Review added successfully!');
-
-			// Placeholder for response handling
-			setSubmitStatus('Implement the functionality to post a review');
+			await axios.post(`http://localhost:4000/books/${book._id}/reviews`, {
+				review,
+			  });
+			  setDetails((prevDetails) => ({
+				...prevDetails,
+				reviews: [...prevDetails.reviews, review],
+			  }));
+			  setReview("");
+			  setSubmitStatus("Review added successfully!");
 		} catch (error) {
 			console.error('Error submitting review:', error);
 			setSubmitStatus('Failed to add review');
