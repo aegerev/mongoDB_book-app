@@ -1,5 +1,15 @@
 # MongoDB Book App
 
+![error](https://github.com/user-attachments/assets/c9d3a5c1-d5c4-461a-be05-37a5fadc1e2c)
+![db connected succesfully](https://github.com/user-attachments/assets/e39fe9fa-6eef-4152-8a04-672263df2dfb)
+![connection string vsCode](https://github.com/user-attachments/assets/be7fdbbe-7f49-4324-a87d-5041b0898009)
+![connection string mongodb](https://github.com/user-attachments/assets/9b9c0bb1-b642-4897-b448-6b3749d5d9bb)
+![We're in!](https://github.com/user-attachments/assets/158f60f1-ded1-46ae-ada3-d54762b1270c)
+![mongodb database](https://github.com/user-attachments/assets/27785acb-867e-485e-8298-49e8228e6616)
+![initial webpage](https://github.com/user-attachments/assets/a4cced8a-f7fe-432d-bfda-d78dd7057a3e)
+![fixed](https://github.com/user-attachments/assets/3c27e85d-8148-4eaa-b4cb-ac6fbf3b034e)
+
+
 ## User Story
 This project showcases how to connect the front-end to the back-end to have a successful book application.
 
@@ -25,6 +35,10 @@ Unfortunately, I cannot deploy this to Github Pages. However, you can test it ou
 2. Clone the repository.
 3. Go to the backend folder and install the necessary dependencies using npm install. Then run it using npm run start.
 4. Go to the frontend folder and install the necessary dependencies using npm install. Then run it using npm start.
+
+## Documentation
+The documentation is found here: [Egerev_RequiredAssignment17.3_Documentation.pdf](https://github.com/user-attachments/files/17089983/Egerev_RequiredAssignment17.3_Documentation.pdf)
+
 
 ## Credits
 © 2024 Alexander Egerev. All Rights Reserved. <br/>
